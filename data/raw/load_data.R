@@ -15,4 +15,8 @@ dim(voter.df)
 names(voter.df)[grepl("6_2016", names(voter.df))]
 with(voter.df, table(turnout16_2016, useNA = 'ifany'))
 
+# this will work only if appropriate libraries are loaded
+voters %>%
+  count(turnout16_2016)
+
 
