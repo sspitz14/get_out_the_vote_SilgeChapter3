@@ -32,7 +32,14 @@ DataExplorer::plot_histogram(voters.eda)
 
 DataExplorer::plot_histogram(voters.eda)
 
+DataExplorer::plot_correlation(voters.eda, cor_args = list( 'use' = 'complete.obs'))
 
+# imiss_g_2016 looks interesting
+# possibly imiss_o or imiss_i
+# also: RIGGED_SYSTEM_3_2016, RIGGED_SYSTEM_4_2016, RIGGED_SYSTEM_5_2016
+# in addition to econtrend_2016
+plot_boxplot(voters.eda, by='turnout16_2016')
+plot_boxplot(voters.eda, by='turnout16_2016', ggtheme = theme_minimal())
 
 
 # On this question about how the economy is doing, 
